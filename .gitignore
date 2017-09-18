@@ -286,3 +286,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# Project specific ignores
+**/dist
+**/src/**/*.js
+**/src/**/*.js.map
+_Layout.cshtml

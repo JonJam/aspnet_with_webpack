@@ -36,4 +36,5 @@
   },
   "author": "",
   "license": "ISC"
+, "-vs-binding":{"BeforeBuild":["build:dev"]}
 }
