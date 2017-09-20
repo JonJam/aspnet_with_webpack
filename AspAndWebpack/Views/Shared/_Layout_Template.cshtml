@@ -36,5 +36,10 @@
         </footer>
     </div>
 </body>
+@*
+    If you want to call a function from within the webpack bundle on a View, then this RenderSection needs to be moved
+    here outside and after body. This is because webpack injects script/link tags at the end of the body, so this section
+    needs to be here for the ordering to be right.
+*@
 @RenderSection("scripts", required: false)
 </html>
