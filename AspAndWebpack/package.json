@@ -31,10 +31,15 @@
   },
   "scripts": {
     "build:dev": "webpack --config webpack.dev.js",
+    "build:dev-watch": "webpack --config webpack.dev.js --watch ./src",
     "build:prod": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
-, "-vs-binding":{"BeforeBuild":["build:dev"]}
+  "license": "ISC",
+  "-vs-binding": {
+    "BeforeBuild": [
+      "build:dev"
+    ]
+  }
 }
